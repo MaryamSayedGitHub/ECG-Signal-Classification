@@ -8,13 +8,9 @@ This project demonstrates how to detect **R-peaks**, **P-peaks**, and **T-peaks*
 
 Here’s an example of what the output looks like after processing:
 
-### ▶️ Full Pipeline Plot
-
-<img src="outputs/full_pipeline_plot.png" alt="ECG Pipeline Plot" width="100%"/>
-
 ### 🔍 Zoomed View with Detected Peaks
+![Ali](https://github.com/user-attachments/assets/7a691de3-ebad-48f5-a50f-f5ec06e62c81)
 
-<img src="outputs/zoomed_peaks_plot.png" alt="Detected R, P, and T Peaks" width="100%"/>
 
 ---
 
