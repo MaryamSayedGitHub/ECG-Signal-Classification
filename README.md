@@ -9,7 +9,14 @@ This project demonstrates how to detect **R-peaks**, **P-peaks**, and **T-peaks*
 Here’s an example of what the output looks like after processing:
 
 ### 🔍 Zoomed View with Detected Peaks
+
+## **Ali :**
+
 ![Ali](https://github.com/user-attachments/assets/7a691de3-ebad-48f5-a50f-f5ec06e62c81)
+
+## **Mohamed :**
+
+![Mohamed](https://github.com/user-attachments/assets/d2718b0a-b534-4064-91a7-f0d58c3ef107)
 
 
 ---
@@ -47,27 +54,6 @@ Install required packages:
 ```bash
 pip install numpy scipy matplotlib
 
----
 
-## ✅ 2. Generate the Visuals to Add
 
-In your Python script (`ecg_peak_detection.py`), **add the following lines** to save the final figures:
 
-```python
-# Save outputs
-plt.figure(figsize=(14, 6))
-plt.plot(ecgX, result, label="Integrated Signal", color='gray')
-plt.plot(X, Y, "x", label="All Peaks")
-plt.plot(X_Rpos, R_peaks, "x", color='red', label="R-peaks")
-plt.plot(p_locs, p_peaks, "o", color='green', label="P-peaks")
-plt.plot(t_locs, t_peaks, "o", color='purple', label="T-peaks")
-plt.title("Detected Peaks: R (red), P (green), T (purple)")
-plt.xlabel("Sample Index")
-plt.ylabel("Value")
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
-plt.savefig("outputs/zoomed_peaks_plot.png")
-
-# Also save full pipeline plots similarly:
-plt.savefig("outputs/full_pipeline_plot.png")
